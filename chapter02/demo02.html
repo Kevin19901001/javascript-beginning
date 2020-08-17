@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>chapter02-demo02</title>
+</head>
+<body>
+	<p>2.2 变量-存储在内存中的数据</p>
+	<script type="text/javascript">
+		// 2.2 变量-存储在内存中的数据
+		// 2.2.1 创建变量并赋值
+		var myFirstVariable;
+		myFirstVariable = 101;
+		alert(myFirstVariable);	// 101
+		
+		myFisrtVariable = "Hello";
+		alert(myFisrtVariable);	// Hello
+		
+		myFisrtVariable = 54321;
+		alert(myFisrtVariable);	// 54321
+		
+		// 2.2.2 用其它变量的值为变量赋值
+		var string1 = "Hello";
+		var string2 = "GoodBye";
+		alert(string1);	// Hello
+		alert(string2);	// GoodBye
+		
+		string2 = string1;
+		alert(string1);	// Hello
+		alert(string2);	// Hello
+		
+		string1 = "Now for something difference";
+		alert(string1);	// Now for something difference
+		alert(string2);	// Hello
+	</script>
+</body>
+</html>

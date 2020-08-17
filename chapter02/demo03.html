@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>chapter02-demo03</title>
+</head>
+<body>
+	<p>2.3 计算数值及基本字符串操作</p>
+	<script type="text/javascript">
+		// 2.3 计算数值及基本字符串操作
+		// 2.3.1 数值计算
+		var firstNumber = 15;
+		var secondNumber = 10;
+		var answer;
+		answer = 15 / 10;
+		alert(answer);	// 1.5
+		
+		answer = firstNumber / secondNumber;
+		alert(answer);	// 1.5
+		
+		// 递增和递减运算符
+		myNum = 1;
+		var myVar = myNum++ * 10 + 1;
+		alert(myVar);	// 11
+		
+		myNumber = 1;
+		var myVariable = ++myNumber * 10 + 1;
+		alert(myVariable);	// 21
+		
+		
+		
+		// 2.3.2 运算符的优先级
+		// 华氏度转摄氏度
+		var degFahren = prompt("Enter the degrees in Fahrenheit", 50);
+		var decent;
+		decent = 5/9 * (degFahren - 32);
+		alert(decent);
+		
+		
+		
+		// 2.3.3 基本的字符串操作
+		// 连接字符串
+		var greetingString = "Hello";
+		var myName = prompt("Please enter your name", "");
+		var concatString;
+		
+		document.write(greetingString + " " + myName + "<br/>");
+		
+		concatString = greetingString + " " + myName;
+		
+		document.write(concatString);
+
+
+		// 2.3.4 字符串与数值的混合操作
+		var degFahren = prompt("Enter the degrees in Fahrenheit", 50);
+        var degCent;
+
+        degCent = 5 / 9 * (degFahren - 32);
+
+        alert(degFahren + "\xB0 Fahrenheit is " + degCent + "\xB0 centigrade");
+	</script>
+</body>
+</html>
